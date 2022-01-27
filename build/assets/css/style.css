@@ -1,0 +1,310 @@
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../img/star.jpg');
+   height: auto;
+   width: auto;
+   max-width: 100%;
+   background-size : cover;
+   background-repeat: no-repeat;
+}
+section
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header
+{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 33px 100px;
+  display: flex;
+  justify-content: start;
+  background-color:black;
+
+}
+header .logo{
+  position: relative;
+  max-width: 80px;
+
+}
+header .navigation
+{
+  position: relative;
+  display: flex;
+  top:15px;
+  left:15px;
+  text-transform: uppercase;
+
+}
+header .navigation li{
+  list-style-type: none;
+
+
+}
+header .navigation li a
+{
+  display: inline-block;
+  color:#fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+header .navigation li a:hover
+{
+	color:#0089E0;
+    font-weight: 900;
+}
+
+header .social-menu li{
+	  list-style-type: none;
+	  display: inline;
+
+}
+header .social-menu li a{
+  display: inline-block;
+  color:#fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+header .social-menu li a:hover{
+	color:#0089E0;
+
+}
+span:hover{
+	color:rgb(220,220,220);
+
+}
+.lang a{
+    list-style-type: none;
+	display: inline;
+	color:#fff;
+	text-decoration:none;
+}
+.lang a:hover{
+	color:rgb(220,220,220);
+
+}
+.sci{
+    position: absolute;
+    left: 72%;
+	top: 15px;
+}
+.social-menu li i{
+    margin:0px -9px;
+}
+header .rmenus{
+	position: absolute;
+    left: 68%;
+	display: flex;
+	top:48px;
+}
+header .rmenu li{
+	padding-top:7px;
+}
+header .rmenu li a{
+	color:white;
+}
+.elements{
+	background-color: black;
+    color: white;
+    font-size: 13px;
+    padding: 8px 14px;
+    display: block;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgb(255,255,102);
+	cursor:pointer;
+}
+.elements a{
+	color:#fff;
+	text-decoration:none;
+}
+.plus{
+	background-color: rgb(255,215,0);
+    color: white;
+    font-size: 13px;
+    padding: 8px 14px;
+    display: block;
+    border-radius: 3px;
+	cursor:pointer;
+}
+.plus a{
+	font-weight:700;
+	color:black;
+	text-decoration:none;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: gray;
+  font-weight: thin;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: gray;
+  font-weight: thin;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.thumb{
+	position: absolute;
+    left: 40%;
+    bottom: 60px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height:3px;
+  width: 80px;
+  margin: 0 2px;
+  background-color:gray;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.thumb li{
+	list-style: none;
+    display: inline-block;
+	color:white;
+    font-size:8px;
+}
+.active, .dot:hover {
+    background: rgb(46,103,248);
+    background: linear-gradient(
+    to right, 
+    rgba(46,103,248) 0%, 
+    rgba(254, 254, 254, 1) 30%, 
+    rgba(254, 254, 254, 1) 47%, 
+    rgba(254, 254, 254, 1) 71%, 
+    rgba(46,103,248) 100%
+  );
+    box-shadow: 0px 0px 10px,
+              0px 0px 2px inset;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.imgBox{
+  position:absolute; 
+	z-index:1;
+	left: 24%;
+	padding-bottom:6%;
+	max-width:600px;
+}
+.imgBox h4{
+	color:white;
+	padding-top:15px;
+	padding-left:9px;
+}
+.discover{
+	display: inline-block;
+    padding: 8px 13px;
+    background:#0089E0;
+    color:white;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+	cursor:pointer;
+	margin-left:7px;
+	
+}
+.discover:hover{
+	transition: all .3s ease-in-out;
+	-webkit-box-shadow: 0px 5px 40px -10px red;
+	-moz-box-shadow: 0px 5px 40px -10px red;
+	box-shadow: 5px 40px -10px red;
+}
+.discover a{
+	color:white;
+	text-decoration:none;
+    font-size:13px;
+
+}
+.seeon{
+	background-color: black;
+    color: white;
+    font-size: 13px;
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #0089E0;
+    cursor: pointer;
+}
+.seeon a{
+	color:white;
+	text-decoration:none;
+    font-size:13px;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
